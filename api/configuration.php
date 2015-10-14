@@ -1,8 +1,9 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+class Configuration {
+    public $debug = true;
+    public $host = "localhost";
+    public $user = "root";
+    public $pass = "root";
+    public $db = "newsletter";
+}
