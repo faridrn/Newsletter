@@ -133,7 +133,7 @@ EOT;
 
 // POST route
 $app->post(
-    '/post',
+    '/',
     function () {
         echo 'This is a POST route';
     }
