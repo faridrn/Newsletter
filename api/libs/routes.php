@@ -8,10 +8,10 @@ $app->patch('/', function () {});
 $app->delete('/', function () {});
 
 // Users
-$app->get('/users', function () {
+$app->get('/users(/)', function () {
     echo Helper::callProcedure('getUsers');
 });
-$app->get('/users/:id', function ($id) {
+$app->get('/users/:id(/)', function ($id) {
     echo Helper::callProcedure("getUsersById", $id, 'int');
 });
 $app->post('/users', function () {
@@ -25,11 +25,11 @@ $app->delete('/users/:id', function ($id) {
 });
 
 // Types
-$app->get('/types', function () {
-    // return all types
+$app->get('/types(/)', function () {
+    echo Helper::callProcedure('getTypes');
 });
-$app->get('/types/:name', function ($name) {
-    // return type with name = $name
+$app->get('/types/:alias(/)', function ($alias) {
+    echo Helper::callProcedure("getTypesByAlias", $alias, 'string');
 });
 $app->post('/types', function () {
     // add new type
@@ -42,8 +42,12 @@ $app->delete('/types/:id', function ($id) {
 });
 
 // Emails
-$app->get('/emails', function () {});
-$app->get('/emails/:id', function ($id) {});
+$app->get('/emails(/)', function () {
+    echo Helper::callProcedure('getEmails');
+});
+$app->get('/emails/:id(/)', function ($id) {
+    echo Helper::callProcedure('getEmailsById', $id, 'int');
+});
 $app->post('/emails', function () {});
 $app->put('/emails/:id', function ($id) {});
 $app->delete('/emails/:id', function ($id) {});
