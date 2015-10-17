@@ -1574,39 +1574,39 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 740px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 960px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1160px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -2966,8 +2966,8 @@ select[multiple].input-lg {
   min-height: 27px;
 }
 .form-horizontal .form-group {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
@@ -2977,7 +2977,7 @@ select[multiple].input-lg {
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 15px;
+  right: 10px;
 }
 @media (min-width: 768px) {
   .form-horizontal .form-group-lg .control-label {
@@ -4217,8 +4217,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -4262,8 +4262,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4307,7 +4307,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
+  padding: 15px 10px;
   font-size: 18px;
   line-height: 20px;
   height: 50px;
@@ -4322,13 +4322,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+    margin-left: -10px;
   }
 }
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  margin-right: 10px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -4355,7 +4355,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 7.5px -10px;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4398,9 +4398,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px 10px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -4509,8 +4509,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-text {
     float: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 @media (min-width: 768px) {
@@ -4519,7 +4519,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: -10px;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -7042,23 +7042,137 @@ a:before {
   src: local('Roboto Bold'), local('Roboto-Bold'), url('../font/roboto/roboto-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/roboto/roboto-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../font/roboto/roboto-v15-latin-700.woff') format('woff'), /* Modern Browsers */ url('../font/roboto/roboto-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../font/roboto/roboto-v15-latin-700.svg#Roboto') format('svg');
   /* Legacy iOS */
 }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/material/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/material/MaterialIcons-Regular.woff2) format('woff2'), url(../font/material/MaterialIcons-Regular.woff) format('woff'), url(../font/material/MaterialIcons-Regular.ttf) format('truetype');
+}
+.icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.icons.md-18 {
+  font-size: 18px;
+}
+.icons.md-24 {
+  font-size: 24px;
+}
+.icons.md-36 {
+  font-size: 36px;
+}
+.icons.md-48 {
+  font-size: 48px;
+}
+.icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+.icons.md-light {
+  color: #ffffff;
+}
+.icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+button {
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #89669b;
+  color: white;
+  padding: 18px 60px;
+  border-radius: 2px;
+  font-size: 22px;
+}
+.fab {
+  border-radius: 50%;
+  margin: 0;
+  padding: 20px;
+}
+.material {
+  position: relative;
+  color: white;
+  margin: 20px auto;
+  height: 400px;
+  width: 500px;
+  background: #f45673;
+}
+.ripple {
+  overflow: hidden;
+}
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+  animation: ripple-animation 2s;
+}
+@keyframes ripple-animation {
+  from {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(100);
+    opacity: 0;
+  }
+}
+.qutton {
+  box-sizing: content-box !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.3);
+  cursor: auto;
+  background: #fff !important;
+  color: #333333;
+}
+.qutton.close {
+  position: absolute !important;
+  cursor: pointer;
+}
+.quttonClonePlaceHolder {
+  visibility: hidden;
+}
 body {
   font-family: 'Roboto', Arial, Tahoma;
   background: #eee;
 }
 .app .app-container {
   background: #fff;
-  margin: 30px 0;
-  min-height: 200px;
+  margin: 20px 0;
+  min-height: 400px;
   border-radius: 3px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
   outline: medium none;
   transform: all 0.2s ease 0s;
   overflow: hidden;
-}
-.app .app-container .app-header {
-  background: #03a9f4;
-  height: 90px;
+  position: relative;
 }
 .text-xxlarge {
   font-size: 48px;
@@ -7082,10 +7196,129 @@ body {
 .subtitle {
   margin-bottom: 10px;
 }
+.app-header {
+  background: #03a9f4;
+  height: 80px;
+}
+.app-header .ripple {
+  line-height: 80px;
+  height: 80px;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.app-header a {
+  line-height: 80px;
+  display: block;
+  text-align: center;
+  height: 80px;
+  width: 100%;
+  color: #fff;
+}
+.app-header a:hover,
+.app-header a:focus {
+  outline: 0 none;
+  text-decoration: none;
+}
+.app-header a.text-right {
+  text-align: right;
+  direction: rtl;
+  text-indent: 10px;
+}
+.app-header .page-title {
+  color: #fff;
+  line-height: 80px;
+  font-size: 24px;
+}
+.app-header #user-menu {
+  margin: 10px 0;
+  background: #fff !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+.app-header .user-menu {
+  padding: 0;
+  list-style: none;
+}
+.app-header .user-menu li {
+  height: 50px;
+}
+.app-header .user-menu li a {
+  color: #333333;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  text-align: left;
+  padding: 0 20px;
+  transition: all 0.2s ease 0s;
+}
+.app-header .user-menu li a:hover {
+  text-decoration: none;
+  background: #f7f7f7;
+}
+.app-header .user-menu li ~ li {
+  border-top: 1px solid #eee;
+}
+.app-menu {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  background: #f2f2f2;
+  height: 100%;
+  padding: 0;
+}
+.app-menu ul {
+  list-style: 0 none;
+  padding: 10px 0;
+}
+.app-menu ul li {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.app-menu ul li.active {
+  font-weight: 700;
+}
+.app-menu ul li.active a {
+  background: #e7e7e7;
+}
+.app-menu ul li a {
+  display: block;
+  height: 100%;
+  margin: 0;
+  border-right: 6.66666667px solid transparent;
+  border-left: 6.66666667px solid transparent;
+  transition: all 0.2s ease 0s;
+  padding: 0 20px;
+  color: #212121;
+  outline: 0 none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.app-menu ul li a i {
+  float: left;
+  line-height: 50px;
+}
+.app-menu ul li a span {
+  display: inline-block;
+  height: 24px;
+  line-height: 50px;
+  font-size: 16px;
+  margin-left: 6px;
+}
+.app-menu ul li a:hover {
+  background: #e7e7e7;
+  text-decoration: none;
+}
 #footer {
   color: #808080;
   font-size: 12px;
 }
 #footer .footer-text {
-  padding: 30px 0;
+  padding: 20px 0;
 }

@@ -10,6 +10,7 @@
                 <meta name="description" content="{Description}">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
                 <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="css/angular-material.min.css">
                 <script src="js/modernizr-2.6.2.min.js"></script>
         </head>
         <body>
@@ -18,10 +19,33 @@
                                 <div class="col-xs-12">
                                         <div class="app-container">
                                                 <header class="app-header">
-                                                        
+                                                        <div class="row">
+                                                                <div class="col-xs-2">
+                                                                        <div class="icons md-36 ripple" data-ripple-color="#0094D6">menu</div>
+                                                                </div>
+                                                                <div class="col-xs-8">
+                                                                        <div class="page-title">Newsletter Panel</div>
+                                                                </div>
+                                                                <div class="col-xs-2">
+                                                                        <!--<div href="#" class="icons md-36 text-right qutton">face</div>-->
+                                                                        <div class="qutton" id="user-menu">
+                                                                                <ul class="user-menu">
+                                                                                        <li><a href="#">My Profile</a></li>
+                                                                                        <li><a href="#">Logout</a></li>
+                                                                                </ul>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
                                                 </header>
+                                                <aside class="app-menu col-xs-6 col-sm-5 col-md-3">
+                                                        <ul>
+                                                                <li class="active ripple" data-ripple-color="#0094D6"><a href="#"><i class="icons">add</i><span>Add</span></a></li>
+                                                                <li class="ripple" data-ripple-color="#0094D6"><a href="#"><i class="icons">email</i><span>Emails</span></a></li>
+                                                                <li class="ripple" data-ripple-color="#0094D6"><a href="#">Menu item 3</a></li>
+                                                        </ul>
+                                                </aside>
                                                 <section class="app-body">
-                                                        
+
                                                 </section>
                                         </div>
                                 </div>
