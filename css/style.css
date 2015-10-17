@@ -7022,6 +7022,44 @@ a:before {
 .has-scrollbar > .nano-content::-webkit-scrollbar {
   display: block;
 }
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/roboto/roboto-v15-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'), url('../font/roboto/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/roboto/roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */ url('../font/roboto/roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */ url('../font/roboto/roboto-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */ url('../font/roboto/roboto-v15-latin-regular.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../font/roboto/roboto-v15-latin-700.eot');
+  /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'), url('../font/roboto/roboto-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../font/roboto/roboto-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */ url('../font/roboto/roboto-v15-latin-700.woff') format('woff'), /* Modern Browsers */ url('../font/roboto/roboto-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */ url('../font/roboto/roboto-v15-latin-700.svg#Roboto') format('svg');
+  /* Legacy iOS */
+}
+body {
+  font-family: 'Roboto', Arial, Tahoma;
+  background: #eee;
+}
+.app .app-container {
+  background: #fff;
+  margin: 30px 0;
+  min-height: 200px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  outline: medium none;
+  transform: all 0.2s ease 0s;
+  overflow: hidden;
+}
+.app .app-container .app-header {
+  background: #03a9f4;
+  height: 90px;
+}
 .text-xxlarge {
   font-size: 48px;
 }
@@ -7043,4 +7081,11 @@ a:before {
 }
 .subtitle {
   margin-bottom: 10px;
+}
+#footer {
+  color: #808080;
+  font-size: 12px;
+}
+#footer .footer-text {
+  padding: 30px 0;
 }
