@@ -53,8 +53,12 @@ $app->put('/emails/:id', function ($id) {});
 $app->delete('/emails/:id', function ($id) {});
 
 // Newsletters
-$app->get('/newsletters', function () {});
-$app->get('/newsletters/:id', function ($id) {});
+$app->get('/newsletters(/)', function () {
+    echo Helper::callProcedure('getNewsletters');
+});
+$app->get('/newsletters/:id(/)', function ($id) {
+    echo Helper::callProcedure('getNewslettersById', $id, 'int');
+});
 $app->post('/newsletters', function () {});
 $app->put('/newsletters/:id', function ($id) {});
 $app->delete('/newsletters/:id', function ($id) {});
