@@ -6,14 +6,17 @@ $(function() {
             switch ($this.data('toggle')) {
                 case 'slide-in':
 //                    alert();
-                    if (!$target.hasClass('shown'))
-                        $target.animate({left: 0}, 500, function() {
+                    if (!$target.hasClass('shown')) {
+                        $(".app-inner").addClass('open');
+                        $target.animate({left: 0}, 400, function() {
                             $target.addClass('shown');
                         });
-                    else
-                        $target.animate({left: -300}, 500, function() {
+                    } else {
+                        $(".app-inner").removeClass('open');
+                        $target.animate({left: "-25%"}, 400, function() {
                             $target.removeClass('shown');
                         });
+                    }
                     break;
                 default:
                     break;
