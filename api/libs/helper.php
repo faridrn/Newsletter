@@ -29,11 +29,23 @@ abstract class Helper {
             $stmt->execute($args);
             $data = $stmt->fetchAll(PDO::FETCH_OBJ);
             $db = null;
-            return json_encode($data);
+            return self::output($data);
         } catch (PDOException $e) {
             return '{"error":{"text":' . $e->getMessage() . '}}';
         }
     }
+
+    static function output($data) {
+//        self::setHeader('json');
+        $records = new stdClass();
+        $records->records = $data;
+        return json_encode($data);
+        return json_encode($records);
+    }
+    
+//    static function setHeader($type = null) {
+//        header('Content-Type: application/json');
+//    }
 
     static function query($sql) {
         try {
