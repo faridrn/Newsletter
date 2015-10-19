@@ -6955,73 +6955,6 @@ a:before {
 .has-scrollbar > .nano-content::-webkit-scrollbar {
   display: block;
 }
-/* Tooltip */
-.tooltip strong {
-  display: block;
-}
-/* Nano Scroller */
-.nano {
-  width: 308px;
-  height: 310px;
-  overflow: scroll;
-  direction: ltr;
-  position: relative;
-  overflow: hidden;
-}
-.nano > .nano-pane {
-  background: #fff4ba;
-  position: absolute;
-  width: 10px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  visibility: hidden\9;
-  opacity: .01;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
-.nano > .nano-pane .nano-slider {
-  background: #f05a2e;
-  position: relative;
-  margin: 0 1px;
-  margin-top: 4px;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-.nano > .nano-content {
-  position: absolute;
-  overflow: scroll;
-  overflow-x: hidden;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding-right: 24px;
-}
-.nano > .nano-content > * {
-  direction: rtl;
-}
-.nano > .nano-content:focus {
-  outline: thin dotted;
-}
-.nano > .nano-content::-webkit-scrollbar {
-  display: none;
-}
-.nano:hover > .nano-pane,
-.nano:hover .nano-pane.active,
-.nano:hover .nano-pane.flashed {
-  visibility: visible\9;
-  opacity: 0.99;
-}
-.has-scrollbar > .nano-content::-webkit-scrollbar {
-  display: block;
-}
 /* roboto-regular - latin */
 @font-face {
   font-family: 'Roboto';
@@ -7174,6 +7107,61 @@ body {
   overflow: hidden;
   position: relative;
 }
+.app-menu {
+  position: absolute;
+  left: -300px;
+  top: 80px;
+  background: #f2f2f2;
+  height: 100%;
+  padding: 0;
+  z-index: 100;
+}
+.app-menu ul {
+  list-style: 0 none;
+  padding: 10px 0;
+}
+.app-menu ul li {
+  height: 50px;
+  line-height: 50px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.app-menu ul li.active {
+  font-weight: 700;
+}
+.app-menu ul li.active a {
+  background: #e7e7e7;
+}
+.app-menu ul li a {
+  display: block;
+  height: 100%;
+  margin: 0;
+  border-right: 6.66666667px solid transparent;
+  border-left: 6.66666667px solid transparent;
+  transition: all 0.2s ease 0s;
+  padding: 0 20px;
+  color: #212121;
+  outline: 0 none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.app-menu ul li a i {
+  float: left;
+  line-height: 50px;
+}
+.app-menu ul li a span {
+  display: inline-block;
+  height: 24px;
+  line-height: 50px;
+  font-size: 16px;
+  margin-left: 6px;
+}
+.app-menu ul li a:hover {
+  background: #e7e7e7;
+  text-decoration: none;
+}
 .text-xxlarge {
   font-size: 48px;
 }
@@ -7260,60 +7248,6 @@ body {
 }
 .app-header .user-menu li ~ li {
   border-top: 1px solid #eee;
-}
-.app-menu {
-  position: absolute;
-  left: 0;
-  top: 80px;
-  background: #f2f2f2;
-  height: 100%;
-  padding: 0;
-}
-.app-menu ul {
-  list-style: 0 none;
-  padding: 10px 0;
-}
-.app-menu ul li {
-  height: 50px;
-  line-height: 50px;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-}
-.app-menu ul li.active {
-  font-weight: 700;
-}
-.app-menu ul li.active a {
-  background: #e7e7e7;
-}
-.app-menu ul li a {
-  display: block;
-  height: 100%;
-  margin: 0;
-  border-right: 6.66666667px solid transparent;
-  border-left: 6.66666667px solid transparent;
-  transition: all 0.2s ease 0s;
-  padding: 0 20px;
-  color: #212121;
-  outline: 0 none;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.app-menu ul li a i {
-  float: left;
-  line-height: 50px;
-}
-.app-menu ul li a span {
-  display: inline-block;
-  height: 24px;
-  line-height: 50px;
-  font-size: 16px;
-  margin-left: 6px;
-}
-.app-menu ul li a:hover {
-  background: #e7e7e7;
-  text-decoration: none;
 }
 #footer {
   color: #808080;

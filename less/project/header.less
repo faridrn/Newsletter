@@ -22,22 +22,3 @@
         }
     }
 }
-.app-menu {
-    position: absolute; left: 0; top: @header-height; background: @sidebar; height: 100%; padding: 0;
-    ul {
-        list-style: 0 none; padding: (@grid-gutter-width / 2) 0;
-        li {
-            height: 50px; line-height: 50px; border-radius: 3px; overflow: hidden; position: relative;
-            &.active {
-                font-weight: 700;
-                a { background: @sidebar-items; }
-            }
-            a {
-                display: block; height: 100%; margin: 0; border-right: (@grid-gutter-width / 3) solid transparent; border-left: (@grid-gutter-width / 3) solid transparent; transition: all 0.2s ease 0s; padding: 0 20px; color: @menu-item; outline: 0 none; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
-                i { float: left; line-height: 50px; }
-                span { display: inline-block; height: 24px; line-height: 50px; font-size: 16px; margin-left: 6px; }
-                &:hover { background: @sidebar-items; text-decoration: none; }
-            }
-        }
-    }
-}
