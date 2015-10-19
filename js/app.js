@@ -1,7 +1,7 @@
 'use strict';
 var app = angular.module('Newsletter', ['ngResource', 'ngRoute']);
 app.constant('Services', (function () {
-    var api = 'http://localhost/newsletter/api/';
+    var api = 'api/';
     return {
         users: api + 'users/:id'
         , newsletters: api + 'newsletters/:id'
@@ -12,8 +12,10 @@ app.config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/n', {
             controller: 'mainController',
             templateUrl: 'tmpl/newsletters.html'
-        });
-//                .otherwise({redirectTo: '/'});
+        }).when('/', {
+            controller: 'usersController',
+            templateUrl: 'tmpl/users.html'
+        }).otherwise({redirectTo: '/'});
     }
 ]);
 
@@ -37,7 +39,8 @@ app.controller('usersController', ['$scope', 'Factory', function ($scope, Factor
         $scope.users = Factory.Users.all();
         // Methods
         $scope.getUser = function (user_id) {
-            alert(user_id);
+            $scope.surrentUser = Factory.Users.get({id: user_id});
+            console.log($scope.surrentUser);
         };
     }
 ]);
