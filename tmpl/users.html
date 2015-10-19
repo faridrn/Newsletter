@@ -1,0 +1,8 @@
+<div ng-controller="usersController">
+        <input ng-model="query">
+        <ul>
+                <li ng-repeat="x in users| filter:query" ng-click="getUser(x.id)">
+                        {{x.id + ', ' + x.name}}
+                </li>
+        </ul>
+</div>

@@ -49,18 +49,10 @@
                                                 <section class="app-body">
                                                         <div class="clearfix"></div>
                                                         <div class="row">
-                                                                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                                                                <div class="col-xs-12 col-md-8 col-md-offset-2 app-inner">
                                                                         <div ng-app="Newsletter">
                                                                                 <div ng-controller="newslettersController">
                                                                                         <div ng-view></div>
-                                                                                </div>
-                                                                                <div ng-controller="usersController">
-                                                                                        <input ng-model="query">
-                                                                                        <ul>
-                                                                                                <li ng-repeat="x in users| filter:query" ng-click="getUser(x.id)">
-                                                                                                        {{x.id + ', ' + x.name}}
-                                                                                                </li>
-                                                                                        </ul>
                                                                                 </div>
                                                                         </div>
                                                                 </div>
