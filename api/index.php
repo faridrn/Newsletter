@@ -1,5 +1,5 @@
 <?php
-
+ini_set('date.timezone', 'Asia/Tehran');
 
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
