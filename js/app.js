@@ -12,6 +12,7 @@ app.constant('Services', (function () {
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
                 .when('/', {controller: 'mainController', templateUrl: 'tmpl/newsletters.html'})
+                .when('/newsletters/:page?', {controller: 'newslettersController', templateUrl: 'tmpl/newsletters.html'})
                 .when('/users', {controller: 'usersController', templateUrl: 'tmpl/users.html'})
                 .when('/logs', {controller: 'logsController', templateUrl: 'tmpl/logs.html'})
                 .otherwise({redirectTo: '/'});
@@ -44,9 +45,10 @@ app.factory('Factory', ['$resource', 'Services', function ($resource, Services) 
 ]);
 app.controller('menuController', function ($scope, $location) {
     $scope.items = [
-        {link: '#/', icon: 'email', text: 'Newsletters'}
+        {link: '/newsletters/add', icon: 'email', text: 'Newsletters'}
+        , {link: '/', icon: 'email', text: 'Newsletters'}
         , {link: '/users', icon: 'face', text: 'Users'}
-        , {link: '#/logs', icon: 'list', text: 'Logs'}
+        , {link: '/logs', icon: 'list', text: 'Logs'}
     ];
     $scope.go = function ($path) {
         $location.path($path);
@@ -82,3 +84,6 @@ app.controller('typesController', ['$scope', 'Factory', function ($scope, Factor
         };
     }
 ]);
+app.controller('logsController', function ($scope) {
+    $scope.message = 'Hello!';
+});
