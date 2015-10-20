@@ -8,13 +8,21 @@
         Users
 </h2>
 <div class="cards-container row">
-        <div class="card-grid col-xs-12 col-sm-4" ng-repeat="u in users | filter:query" ng-click="getUser(u.id)">
+        <div class="card-grid col-xs-12 col-sm-4" ng-repeat="u in users| filter:query" ng-click="getUser(u.id)" data-userid="{{u.id}}">
                 <div class="card">
                         <div class="card-header">
-                                
+                                <div class="card-header-inner">
+                                        <div class="name">{{u.name}}</div>
+                                        <div class="username">{{u.username}}</div>
+                                </div>
                         </div>
                         <div class="card-inner">
-                                {{u.id + ', ' + u.name}}
+                                <div class="status">
+                                        <span ng-if="u.active == 1" class="label label-success">Active</span>
+                                        <span ng-if="u.active == 0" class="label label-danger">Inactive</span>
+                                </div>
+                                <div class="email">{{u.email}}</div>
+                                <div class="access">{{u.types}}</div>
                         </div>
                 </div>
         </div>

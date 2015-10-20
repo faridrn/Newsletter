@@ -50,4 +50,13 @@ body { font-family: @font-family; background: #eee; }
         strong { font-weight: normal; color: lighten(@gray-dark, 10%); }
     }
     .thumb { width: 80px; height: 80px; border-radius: 100%; overflow: hidden; box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12); text-align: center; }
+    
+    .card-header {
+        background: @card-header-bg; color: #fff;
+        .card-header-inner { padding: 0 @grid-gutter-width; }
+        .name { padding-top: (@grid-gutter-width * 2); font-size: 24px; }
+        .username { padding-bottom: (@grid-gutter-width /2); }
+    }
+    .email { margin-top: (@grid-gutter-width /2) }
+    .access { margin-top: @grid-gutter-width }
 }
