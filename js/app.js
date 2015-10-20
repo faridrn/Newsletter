@@ -1,5 +1,5 @@
 'use strict';
-var app = angular.module('Newsletter', ['ngResource', 'ngRoute']);
+var app = angular.module('Newsletter', ['ngResource', 'ngRoute', 'route-segment']);
 app.constant('Services', (function () {
     var api = 'api/';
     return {
