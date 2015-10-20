@@ -1,1 +1,20 @@
-<p>{{ message }}</p>
+<div class="card" ng-repeat="n in newsletters">
+        <div class="card-inner row">
+                <div class="col-xs-2">
+                        <div class="thumb">{{n.type_alias}}</div>
+                </div>
+                <div class="col-xs-10">
+                        <a class="preview" href="{{n.url}}" target="_blank">
+                                <i class="icons">tv</i> <span>Preview</span>
+                        </a>
+                        <h3>{{n.title}}</h3>
+                        <div class="meta user"><strong>By</strong> {{n.user_name}}</div>
+                        <div class="meta date"><strong>Created</strong> {{n.created}}</div>
+                        <div class="progress">
+                                <div class="progress-bar progress-bar-success progress-bar-striped" style="width: {{((n.state1 / n.count) * 100).toFixed(2)}}%"></div>
+                                <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: {{((n.state0 / n.count) * 100).toFixed(2)}}%"></div>
+                                <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: {{((n.state2 / n.count) * 100).toFixed(2)}}%"></div>
+                        </div>
+                </div>
+        </div>
+</div>
